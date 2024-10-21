@@ -1,0 +1,22 @@
+{
+  "products": [
+    {
+      "id": "n1",
+      "name": "Naruto1",
+      "price": "20",
+      "image": "https://www.culturamix.com/wp-content/gallery/bonecos-do-naruto/bonecos-do-naruto-9.jpg"
+    },
+    {
+      "id": "n2",
+      "name": "Naruto2",
+      "price": "50",
+      "image": "https://th.bing.com/th/id/OIP.zCduvDa7snIwV_UtwvJtHAHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": "n3",
+      "name": "Naruto3",
+      "price": "100",
+      "image": "https://http2.mlstatic.com/pacote-6-bonecos-miniaturas-naruto-coleco-a-pronta-entrega-D_NQ_NP_431311-MLB20509610751_122015-F.jpg"
+    }
+  ]
+}

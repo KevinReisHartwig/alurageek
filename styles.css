@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+body {
+    font-family: "Press Start 2P", system-ui;
+    background-color: white;
+}
+
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #8f232e;
+    position: relative;
+}
+
+.cabecalho img {
+    padding: 15px 0px;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-direction: row;
+    margin-top: 90px;
+    margin-bottom: 40px;
+}
+
+
+
+@media (max-width: 493px) {
+    .geek {
+        font-size: 19px;
+    }
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse; 
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.agregarProducto {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: fit-content;
+}
+
+.agregarProducto h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.agregarProducto form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.agregarProducto input[type="text"],
+.agregarProducto input[type="number"],
+.agregarProducto input[type="submit"],
+.agregarProducto .limpar-input {
+    padding: 1.25rem 1.75rem;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 35px;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.agregarProducto input[type="submit"],
+.agregarProducto .limpar-input {
+    border: none;
+    cursor: pointer;
+}
+
+.agregarProducto input[type="submit"],
+.agregarProducto .limpar-input {
+    background-color: #28a745;
+    color: #fff;
+    width: 100%;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.agregarProducto .limpar-input {
+    background-color: #dc3545;
+}
+
+.agregarProducto input[type="submit"]:active {
+    background-color: #1e7932;
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.agregarProducto .limpar-input:active {
+    background-color: #8f232e;
+    transform: scale(0.95);
+    box-shadow: none;
+}
+
+.botao {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.productos {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+.productos-titulo {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    width: 16rem;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 20rem;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: #39FF14;
+}
+
+.card img {
+    max-width: 14.4rem;
+    height: 10rem;
+    border-radius: 5px;
+}
+
+.card h4 {
+    margin-top: 66px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card p {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.delete-button {
+    background-color: #dc3545; 
+    color: #fff; 
+    border: none; 
+    border-radius: 50%; 
+    padding: 10px; 
+    cursor: pointer; 
+    transition: opacity 0.3s ease, background-color 0.2s ease, transform 0.1s ease, box-shadow 0.1s ease; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); 
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0; 
+}
+
+.card:hover .delete-button {
+    opacity: 1; 
+}
+
+.delete-button img {
+    width: 20px; 
+    height: 20px;
+}
+
+.delete-button:hover {
+    background-color: #c82333; 
+}
+
+.delete-button:active {
+    background-color: #8f232e; 
+    transform: scale(0.95); 
+    box-shadow: none; 
+}
+
+.rodape {
+    width: 100%;
+    background-color: #8f232e;
+    color: white;
+    text-align: center;
+    padding: 50px 0px;
+    margin-top: auto; 
+}
+
+.rodape h2 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.rodape h3 {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+
+.console {
+    width: 25rem;
+    padding: 20px;
+}
+
+@media (max-width: 320px) {
+    .geek {
+        font-size: 15px;
+    }
+
+    .productos-titulo {
+        margin-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .card img {
+        max-width: 10.4rem !important;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 23rem;
+    }
+    header::before {
+        border-top: 35px solid #515460;
+        border-bottom: 36px solid #515460;
+        border-left: 70px solid #515460;
+        border-right: 70px solid #515460;
+    }
+
+    .header-circle {
+        left: 30px;
+        top: 114px;
+    }
+    main {
+        flex-direction: column;
+    }
+
+    .agregarProducto, .productos {
+        width: 100%;
+    }
+
+    .botao {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .console {
+        width: 14rem;
+        padding: 20px;
+    }
+
+    .contenedor-productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1291px) {
+    main {
+        flex-direction: column;
+    }
+
+    .agregarProducto, .productos {
+        width: 100%;
+    }
+
+    .botao {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+.contenedor-productos ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    gap: 20px;
+}

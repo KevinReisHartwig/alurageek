@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Geek</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <img src="/assets/Logo.png" alt="Logo alura geek.">
+    </header>
+
+    <main>
+        <section class="agregarProducto">
+            <h3>
+                + Produtos:
+            </h3>
+
+            <form  class="form-container" data-form>
+                <input type="text" placeholder="nome..." minlength="3" maxlength="30" required data-name>
+                <input type="number" placeholder="preço..." min="1" maxlength="6" required data-price>
+                <input type="text" placeholder="imagem..." required data-image>
+                
+                
+                <div class="botao">
+                    <input type="submit" value="Salvar">
+                    <button type="button" class="limpar-input">Limpar</button>
+                </div>
+            </form>
+        </section>
+        <section class="productos">
+            <h3 class="productos-titulo">
+                Meus Produtos:
+            </h3>
+            <div data-product class="contenedor-productos">
+                                            
+                                                    
+            </div>                              
+        </section>       
+
+    </main>
+
+    <footer class="rodape">
+        <img src="/assets/Logo.png" alt="Logo alura geek.">
+        <h2>DESENVOLVIDO POR KEVIN</h2>
+    </footer>
+
+    <script type="module" src="js/controllers/main.js"></script>
+</body>
+
+</html>
